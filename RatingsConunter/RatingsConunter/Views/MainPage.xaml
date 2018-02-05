@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RatingsConunter"
+             x:Class="RatingsConunter.MainPage">
+
+
+                      
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0">
+                            <AbsoluteLayout  BackgroundColor="Gray" 
+                                             WidthRequest="142" 
+                                             Margin ="0,0,0,535">
+                                <StackLayout WidthRequest="{Binding RatingWidth}" 
+                                             HeightRequest="30" 
+                                             BackgroundColor="Black">  
+                                </StackLayout>
+                                <Image Source="ratingTransparent.png" 
+                                       Aspect="AspectFit" 
+                                       BackgroundColor="Transparent"
+                                       AbsoluteLayout.LayoutBounds="0,0,AutoSize,AutoSize"
+                                       AbsoluteLayout.LayoutFlags="PositionProportional">
+                                </Image>
+                            </AbsoluteLayout>  
+                    </StackLayout>
+</ContentPage>
